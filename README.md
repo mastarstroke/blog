@@ -22,7 +22,9 @@ In this simple blog system built with Laravel and Ajax, Here’s what you can ex
 ```php artisan key:gen```
 
 - We are now almost there, so we need to update the .env file with our databse configuration
-```DB_DATABASE=database nameDB_USERNAME=database usernameDB_PASSWORD=database password (optional: only when your database username has a password)```
+```DB_DATABASE=database name
+    DB_USERNAME=database username
+    DB_PASSWORD=database password (optional: only when your database username has a password)```
 - We can now proceed to add the necessary tables by running migrations (We added a seeder for primary counsels), so we can start working with the app
 
 ```php artisan migrate --seed```

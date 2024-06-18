@@ -168,12 +168,12 @@
 
           @foreach($latest_cultures as $culture)
             <div class="d-lg-flex post-entry-2">
-              <a href="single-post.html" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
-                <img src="assets/img/post-landscape-6.jpg" alt="" class="img-fluid">
+              <a href="{{route('post_details', $culture->id)}}" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
+                <img src="postimage/{{$culture->image}}" alt="" class="img-fluid">
               </a>
               <div>
                 <div class="post-meta"><span class="date">{{$culture->category}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($culture->created_at)->format('F jS \ y')}}</span></div>
-                <h3><a href="single-post.html">{{$culture->title}}</a></h3>
+                <h3><a href="{{route('post_details', $culture->id)}}">{{$culture->title}}</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente, laudantium dolorum itaque libero eos deleniti?</p>
                 <div class="d-flex align-items-center author">
                   <div class="name">
@@ -191,7 +191,7 @@
             @foreach($cultures as $latest_culture)
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">{{$latest_culture->category}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($latest_culture->created_at)->format('F jS \ y')}}</span></div>
-              <h2 class="mb-2"><a href="single-post.html">{{$latest_culture->title}}</a></h2>
+              <h2 class="mb-2"><a href="{{route('post_details', $latest_culture->id)}}">{{$latest_culture->title}}</a></h2>
               <span class="author mb-3 d-block">{{$latest_culture->users->name}}</span>
             </div>
             @endforeach
@@ -207,7 +207,7 @@
 
         <div class="section-header d-flex justify-content-between align-items-center mb-5">
           <h2>Tourism</h2>
-          <div><a href="category.html" class="more">See All Business</a></div>
+          <div><a href="#" class="more">See All Business</a></div>
         </div>
 
         <div class="row">
@@ -216,7 +216,7 @@
             @foreach($tourisms as $tourism)
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">{{$tourism->category}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($tourism->created_at)->format('F jS \ y')}}</span></div>
-              <h2 class="mb-2"><a href="single-post.html">{{$tourism->title}}</a></h2>
+              <h2 class="mb-2"><a href="{{route('post_details', $tourism->id)}}">{{$tourism->title}}</a></h2>
               <span class="author mb-3 d-block">{{$tourism->users->name}}</span>
             </div>
             @endforeach
@@ -226,7 +226,7 @@
 
           @foreach($latest_tourisms as $tourisms)
             <div class="d-lg-flex post-entry-2">
-              <a href="single-post.html" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
+              <a href="{{route('post_details', $tourisms->id)}}" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
                 <img src="postimage/{{$tourisms->image}}" alt="" class="img-fluid">
               </a>
               <div>
@@ -253,14 +253,14 @@
 
         <div class="section-header d-flex justify-content-between align-items-center mb-5">
           <h2>Lifestyle</h2>
-          <div><a href="category.html" class="more">See All Lifestyle</a></div>
+          <div><a href="#" class="more">See All Lifestyle</a></div>
         </div>
 
         <div class="row g-5">
           
           <div class="col-lg-4">
           <div class="post-entry-1 lg">
-              <a href="single-post.html"><img src="postimage/{{$lifestyle->image}}" alt="" class="img-fluid"></a>
+              <a href="{{route('post_details', $lifestyle->id)}}"><img src="postimage/{{$lifestyle->image}}" alt="" class="img-fluid"></a>
               <div class="post-meta"><span class="date">{{$lifestyle->categories->title}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($lifestyle->created_at)->format('F jS \ y')}}</span></div>
               <h2><a href="single-post.html">{{$lifestyle->title}}</a></h2>
               <p class="mb-4 d-block">{{$lifestyle->desc}}</p>
@@ -280,9 +280,9 @@
 
                 @foreach($lifestyle_one as $lifestyle)
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="postimage/{{$lifestyle->image}}" alt="" class="img-fluid"></a>
+                  <a href="{{route('post_details', $lifestyle->id)}}"><img src="postimage/{{$lifestyle->image}}" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">{{$lifestyle->category}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($lifestyle->created_at)->format('F jS \ y')}}</span></div>
-                  <h2><a href="single-post.html">{{$lifestyle->title}}</a></h2>
+                  <h2><a href="{{route('post_details', $lifestyle->id)}}">{{$lifestyle->title}}</a></h2>
                 </div>
                 @endforeach
 
@@ -290,9 +290,9 @@
               <div class="col-lg-4 border-start custom-border">
                 @foreach($lifestyle_two as $lifestyle)
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-3.jpg" alt="" class="img-fluid"></a>
+                  <a href="{{route('post_details', $lifestyle->id)}}"><img src="postimage/{{$lifestyle->image}}" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">{{$lifestyle->category}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($lifestyle->created_at)->format('F jS \ y')}}</span></div>
-                  <h2><a href="single-post.html">{{$lifestyle->title}}</a></h2>
+                  <h2><a href="{{route('post_details', $lifestyle->id)}}">{{$lifestyle->title}}</a></h2>
                 </div>
                 @endforeach
               </div>
@@ -301,7 +301,7 @@
               @foreach($randoms as $lifestyle)
               <div class="post-entry-1 border-bottom">
                 <div class="post-meta"><span class="date">{{$lifestyle->category}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($lifestyle->created_at)->format('F jS \ y')}}</span></div>
-                <h2 class="mb-2"><a href="single-post.html">{{$lifestyle->title}}</a></h2>
+                <h2 class="mb-2"><a href="{{route('post_details', $lifestyle->id)}}">{{$lifestyle->title}}</a></h2>
                 <span class="author mb-3 d-block">{{$lifestyle->users->name}}</span>
               </div>
               @endforeach
