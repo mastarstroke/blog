@@ -21,7 +21,7 @@ class UserMiddleware
             return $next($request); 
         }
         else{
-            return redirect()->route('login/register');
+            return redirect()->route('login');
         }
     }
 }
