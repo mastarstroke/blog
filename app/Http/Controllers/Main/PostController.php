@@ -113,9 +113,9 @@ class PostController extends Controller
             $comment->save();
 
             // Send comment Notification to post owner
-            $email = $comment->posts->users->email;
-            $admin = $comment->posts->users->name;
-            sendUserPostEmail($email, $user);
+            //$email = $comment->posts->users->email;
+           // $user = $comment->posts->users->name;
+          //  sendUserPostEmail($email, $user);
     
             return response()->json(['success' => true], 201);
         }
