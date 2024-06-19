@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-3.jpg');">
+                  <a href="" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-3.jpg');">
                     <div class="img-bg-inner">
                       <h2>13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-4.jpg');">
+                  <a href="" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-4.jpg');">
                     <div class="img-bg-inner">
                       <h2>9 Half-up/half-down Hairstyles for Long and Medium Hair</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
@@ -95,7 +95,7 @@
             <div class="post-entry-1 lg">
               <a href="{{route('post_details', $lg_post->id)}}"><img src="postimage/{{$lg_post->image}}" alt="" class="img-fluid"></a>
               <div class="post-meta"><span class="date">{{$lg_post->categories->title}}</span> <span class="mx-1">&bullet;</span> <span>{{Carbon::parse($lg_post->created_at)->format('F jS \ y')}}</span></div>
-              <h2><a href="single-post.html">{{$lg_post->title}}</a></h2>
+              <h2><a href="">{{$lg_post->title}}</a></h2>
               <p class="mb-4 d-block">{{$lg_post->desc}}</p>
 
               <div class="d-flex align-items-center author">
@@ -160,7 +160,7 @@
 
         <div class="section-header d-flex justify-content-between align-items-center mb-5">
           <h2>Culture</h2>
-          <div><a href="category.html" class="more">See All Culture</a></div>
+          <div><a href="" class="more">See All Culture</a></div>
         </div>
 
         <div class="row">
