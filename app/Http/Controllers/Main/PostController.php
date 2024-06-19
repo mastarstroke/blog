@@ -24,8 +24,9 @@ class PostController extends Controller
 
     public function add_post()
     {
+        $categories = Category::inRandomOrder()->get();
         $cates = Category::latest()->get();
-        return view('main.post.add', compact('cates'));
+        return view('main.post.add', compact('cates','categories'));
     }
 
     public function store_post(PostRequest $request)
@@ -50,7 +51,7 @@ class PostController extends Controller
 
         $post->save();
 
-        return response()->json(['success' => true]);
+        return response()->json(['success' => true], 201);
     }
 
     public function edit_post($id)
