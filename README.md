@@ -2,7 +2,7 @@
 In this simple blog system built with Laravel and Ajax, Here’s what you can expect:
 
 ### Key Features
-- User Authentication: Ensures a secure environment through robust user authentication. Register an account and log in to access personalized features and interact more with the application.
+- User Authentication: Ensures a secure environment through robust user authentication. Register an account with email verification and log in to access personalized features and interact more with the application.
 - Create and Categorize Posts: Authenticated users can create posts effortlessly. Each post can be assigned to specific categories.
 - Comments by Authenticated Users: Only authenticated users can comment.
 - Admin and User Dashboards:     
