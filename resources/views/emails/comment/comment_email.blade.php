@@ -1,6 +1,6 @@
 <x-mail::message>
 
-Hey! {{$user->name}}
+Hey! {{$user}}
 <p class="text-white">A comment was made about your post.
 
 <span class="text-white">You will like to have a check.</span>
